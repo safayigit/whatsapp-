@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="left">
+                <div class="header">
+                    <div class="userImg">
+                        <img class="cover" src="./img/profil.jpg" alt="">
+                    </div>
+                    <ul class="nav-icons">
+                        <li><i class="fa-solid fa-circle"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    </ul>
+                </div>
+                <div class="searchChat">
+                    <div>
+                        <input type="text" placeholder="Ara?">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="chatList">
+                    <div class="block" onclick="ahmet ()">
+                        <div class="imgBox">
+                            <img class="cover" src="./img/images.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h4>Ahmet</h4>
+                                <p class="time">22.00</p>
+                            </div>
+                            <div class="message-p">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block" onclick="mehmet ()">
+                        <div class="imgBox">
+                            <img class="cover" src="./img/images.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h4>Mehmet</h4>
+                                <p class="time">23.00</p>
+                            </div>
+                            <div class="message-p">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, rerum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block" onclick="mustafa ()">
+                        <div class="imgBox">
+                            <img class="cover" src="./img/images.png" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h4>Mustafa</h4>
+                                <p class="time">00.00</p>
+                            </div>
+                            <div class="message-p">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, rerum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right ahmet">
+                <div class="header">
+                    <div class="imgText">
+                        <div class="userImg">
+                            <img class="cover" src="./img/images.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Ahmet <br> <span>online</span></h4>
+                        </div>
+                    </div>
+                    <ul class="nav-icons">
+                        <i class="fa-solid fa-circle-arrow-left fa-beat ahmetBack" onclick="ahmetBack ()"></i>
+                        <li><i class="fa-solid fa-circle"></i></li>
+                        <li><i class="fa-solid fa-message"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    </ul>
+                </div>
+                <div class="chatBox">
+                    <div class="message my-message">
+                        
+                    </div>
+                </div>
+                <div class="chatInput">
+                    <i class="fa-solid fa-face-grin-beam"></i>
+                    <i class="fa-solid fa-link"></i>
+                    <input id="clear" class="mesajBir" type="text" placeholder="mesaj at">
+                    <i class="fa-solid fa-location-arrow" id="createDiv" onclick="mesajGonderAhmet ()"></i>
+                </div>
+            </div>
+            <div class="right mehmet">
+                <div class="header">
+                    <div class="imgText">
+                        <div class="userImg">
+                            <img class="cover" src="./img/images.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Mehmet <br> <span>online</span></h4>
+                        </div>
+                    </div>
+                    <ul class="nav-icons">
+                        <i class="fa-solid fa-circle-arrow-left " onclick="mehmetBack ()"></i>
+                        <li><i class="fa-solid fa-circle"></i></li>
+                        <li><i class="fa-solid fa-message"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    </ul>
+                </div>
+                <div class="chatBox">
+                    <div class="message my-messageMehmet">
+                        
+                    </div>
+                </div>
+                <div class="chatInput">
+                    <i class="fa-solid fa-face-grin-beam"></i>
+                    <i class="fa-solid fa-link"></i>
+                    <input class="mesajİki" type="text" placeholder="mesaj at">
+                    <i class="fa-solid fa-location-arrow" id="createDiv" onclick="mesajGonderMehmet ()"></i>
+                </div>
+            </div>
+            <div class="right mustafa">
+                <div class="header">
+                    <div class="imgText">
+                        <div class="userImg">
+                            <img class="cover" src="./img/images.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Mustafa <br> <span>online</span></h4>
+                        </div>
+                    </div>
+                    <ul class="nav-icons">
+                        <i class="fa-solid fa-circle-arrow-left " onclick="mustafaBack ()"></i>
+                        <li><i class="fa-solid fa-circle"></i></li>
+                        <li><i class="fa-solid fa-message"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    </ul>
+                </div>
+                <div class="chatBox">
+                    <div class="message my-messageMustafa">
+                        
+                    </div>
+                </div>
+                <div class="chatInput">
+                    <i class="fa-solid fa-face-grin-beam"></i>
+                    <i class="fa-solid fa-link"></i>
+                    <input class="mesajUc" type="text" placeholder="mesaj at">
+                    <i class="fa-solid fa-location-arrow" id="createDiv" onclick="mesajGonderMustafa ()"></i>
+                </div>
+            </div>
+        </div>
+<script src="./app.js"></script>
+</body>
+</html>
